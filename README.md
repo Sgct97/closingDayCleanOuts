@@ -1,47 +1,150 @@
-# Astro Starter Kit: Minimal
+# Closing Day Cleanouts - Premium Real Estate Support Website
 
-```sh
-npm create astro@latest -- --template minimal
+## Overview
+
+An **enterprise-level ultra premium** website built with the Astro framework for "Closing Day Cleanouts" - a luxury furniture and contents removal service catering to affluent real estate professionals. This website showcases premium services with a sophisticated design and user experience.
+
+## Features
+
+### 🏠 **Home Page**
+- **Hero Section**: Compelling value proposition with premium branding
+- **Services Overview**: 6 core services with detailed descriptions
+- **Why Choose Us**: Statistics and trust indicators
+- **Process Flow**: 4-step streamlined process
+- **Call-to-Action**: Multiple conversion points
+
+### 🛠️ **Services Page**
+- **Detailed Service Descriptions**: 6 premium service offerings
+- **Transparent Pricing**: Starting prices for each service
+- **Additional Services**: Complementary offerings
+- **Service Features**: Comprehensive feature lists
+
+### 📞 **Contact Page**
+- **Premium Quote Form**: Comprehensive lead capture
+- **Contact Information**: Multiple contact methods
+- **Service Areas**: Geographic coverage details
+- **FAQ Section**: Common questions and answers
+- **Emergency Contact**: 24/7 availability
+
+## Design & Technology
+
+### **Color Scheme**
+- **Primary**: Navy Blue (`slate-900`) - Professional and trustworthy
+- **Accent**: Amber Gold (`amber-500`) - Luxury and premium feel
+- **Background**: Light Gray (`slate-50`) - Clean and modern
+- **Text**: Various slate tones for hierarchy
+
+### **Technology Stack**
+- **Framework**: Astro 5.11.0
+- **Styling**: Tailwind CSS 4.1.11
+- **Typography**: Inter font family
+- **Icons**: Heroicons (SVG)
+- **Animations**: Custom CSS animations
+
+### **Premium Features**
+- **Responsive Design**: Mobile-first approach
+- **Premium Typography**: Inter font with proper weight hierarchy
+- **Gradient Backgrounds**: Custom CSS gradients
+- **Hover Effects**: Smooth transitions and interactions
+- **Modern Layout**: Clean, spacious design with proper whitespace
+
+## Services Offered
+
+1. **Full Property Cleanouts** - Complete furniture and contents removal
+2. **Estate Liquidation** - Professional valuation and liquidation services
+3. **Luxury Staging Prep** - Selective removal for staging preparation
+4. **Emergency Response** - 24/7 urgent cleanout services
+5. **Donation Coordination** - Tax-deductible donation services
+6. **Secure Disposal** - Confidential disposal of sensitive items
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+### Development
+```bash
+npm run dev
+```
+Server will start at `http://localhost:4321`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+### Build
+```bash
+npm run build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Preview
+```bash
+npm run preview
+```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Project Structure
 
-Any static assets, like images, can be placed in the `public/` directory.
+```
+src/
+├── layouts/
+│   └── Layout.astro          # Main layout component
+├── pages/
+│   ├── index.astro          # Home page
+│   ├── services.astro       # Services page
+│   └── contact.astro        # Contact page
+├── styles/
+│   └── global.css           # Global styles and utilities
+└── components/              # Reusable components (ready for expansion)
+```
 
-## 🧞 Commands
+## Business Focus
 
-All commands are run from the root of the project, from a terminal:
+This website is specifically designed for:
+- **Real Estate Professionals** working with luxury properties
+- **Affluent Clientele** requiring premium services
+- **Property Staging Companies** needing cleanout services
+- **Estate Planning Professionals** managing high-value estates
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Key Differentiators
 
-## 👀 Want to learn more?
+- **24/7 Emergency Response** for urgent property needs
+- **Luxury Property Specialization** with high-end experience
+- **Comprehensive Insurance Coverage** up to $2 million
+- **Confidentiality Agreements** for high-profile clients
+- **Professional Appraisals** for valuable items
+- **Eco-Friendly Practices** with donation coordination
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contact Information
+
+- **Phone**: (555) 123-4567 (24/7 Emergency Line)
+- **Email**: spenser@closingdaycleanouts.com
+- **Service Area**: Greater Metropolitan Area (50+ mile radius)
+- **Hours**: 
+  - Mon-Fri: 7:00 AM - 9:00 PM
+  - Sat-Sun: 8:00 AM - 8:00 PM
+  - Emergency: 24/7
+
+## SEO & Marketing Ready
+
+The website is optimized for:
+- **Search Engine Optimization** with proper meta tags
+- **Local SEO** with service area information
+- **Lead Generation** with multiple conversion points
+- **Professional Branding** consistent throughout
+- **Mobile Optimization** for all devices
+
+## Future Enhancements
+
+Ready for expansion with:
+- **Blog Section** for content marketing
+- **Client Testimonials** showcase
+- **Before/After Gallery** of completed projects
+- **Online Booking System** integration
+- **Live Chat** customer support
+- **Multi-language Support** for diverse clientele
+
+---
+
+*Built with precision for premium real estate professionals who demand excellence in every detail.*

@@ -1,0 +1,409 @@
+@import "tailwindcss";
+
+/* Ultra Premium Typography */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+.font-inter {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Premium Color Variables */
+:root {
+  --gradient-primary: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%, #0a0a0a 100%);
+  --gradient-gold: linear-gradient(135deg, #d4af37 0%, #ffd700 25%, #ffed4a 50%, #ffd700 75%, #d4af37 100%);
+  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #d97706 25%, #b45309 50%, #d97706 75%, #f59e0b 100%);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  --shadow-ultra: 0 35px 60px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* Ultra Premium Gradients */
+.gradient-hero {
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%);
+  animation: shimmer 10s ease-in-out infinite;
+}
+
+.gradient-cta {
+  background: var(--gradient-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  animation: shine 3s ease-in-out infinite;
+}
+
+/* Premium Glass Morphism */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-premium);
+}
+
+.glass-ultra {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-ultra);
+}
+
+/* Advanced Animations */
+@keyframes shimmer {
+  0%, 100% { 
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% { 
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.6); }
+}
+
+/* Premium Animation Classes */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animate-fadeInScale {
+  animation: fadeInScale 0.8s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Premium Hover Effects */
+.hover-lift {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-ultra);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Premium Buttons */
+.btn-premium {
+  background: var(--gradient-gold);
+  color: #000;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-premium);
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-premium:hover::before {
+  left: 100%;
+}
+
+.btn-premium:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: var(--shadow-ultra);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-gold);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.btn-secondary:hover::before {
+  left: 0;
+}
+
+.btn-secondary:hover {
+  color: #000;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: var(--shadow-premium);
+}
+
+/* Premium Typography */
+.text-hero {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-premium {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text-accent {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Premium Cards */
+.card-premium {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+}
+
+.card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-gold);
+}
+
+.card-premium:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-ultra);
+}
+
+.card-dark {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Premium Form Styling */
+.form-premium input,
+.form-premium select,
+.form-premium textarea {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(245, 158, 11, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-premium input:focus,
+.form-premium select:focus,
+.form-premium textarea:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1), 0 15px 35px rgba(0, 0, 0, 0.15);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+/* Premium Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Premium Parallax Effects */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Premium Loading States */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Premium Responsive Design */
+@media (max-width: 768px) {
+  .text-hero {
+    font-size: 2.5rem;
+  }
+  
+  .card-premium {
+    padding: 1.5rem;
+  }
+  
+  .btn-premium,
+  .btn-secondary {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Premium Accessibility */
+.focus-ring:focus {
+  outline: 3px solid #d4af37;
+  outline-offset: 3px;
+}
+
+/* Premium Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .card-premium {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+}
+
+/* Premium Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
