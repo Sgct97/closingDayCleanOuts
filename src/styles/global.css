@@ -461,7 +461,13 @@ html {
     right: auto !important;
     bottom: auto !important;
     left: auto !important;
-    margin-top: 2rem !important;
+    margin: 1rem auto !important;
+    display: block !important;
+  }
+  
+  /* Hide overlay elements on mobile completely */
+  .overlay-mobile-hide {
+    display: none !important;
   }
   
   /* Text Size Reductions */
