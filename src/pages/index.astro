@@ -6,33 +6,33 @@ import Layout from '../layouts/Layout.astro';
   <!-- Ultra Premium Hero Section -->
   <section class="min-h-screen bg-black relative overflow-hidden">
     <div class="max-w-7xl mx-auto relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+      <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen grid-mobile-single">
         
         <!-- Left Column - Content -->
-        <div class="flex items-center justify-center lg:justify-start px-8 lg:px-16 py-20">
+        <div class="flex items-center justify-center lg:justify-start px-8 lg:px-16 py-20 hero-mobile-fix">
           <div class="max-w-2xl">
-            <div class="mb-12">
+            <div class="mb-12 space-mobile-md">
                              <span class="inline-block px-8 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-xs uppercase tracking-[0.3em] rounded-full shadow-2xl">
                  Same Day Service Available
                </span>
             </div>
             
-            <h1 class="font-playfair text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tight">
+            <h1 class="font-playfair text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tight hero-title-mobile">
               Closing Day
               <span class="block text-transparent bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 bg-clip-text">
                 Cleanouts
               </span>
             </h1>
             
-            <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mb-12"></div>
+            <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mb-12 space-mobile-lg"></div>
             
-            <p class="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-12">
+            <p class="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-12 hero-subtitle-mobile">
               Tampa Bay's premier house cleanout service for real estate professionals.
-              <span class="block mt-4 text-white/70 text-lg">Local. Professional. Immediate.</span>
+              <span class="block mt-4 text-white/70 text-lg text-mobile-base">Local. Professional. Immediate.</span>
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-6 items-start">
-              <a href="/contact" class="group inline-flex items-center px-10 py-5 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-lg uppercase tracking-wider rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            <div class="flex flex-col sm:flex-row gap-6 items-start button-stack-mobile">
+              <a href="/contact" class="group inline-flex items-center px-10 py-5 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-lg uppercase tracking-wider rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hero-cta-mobile">
                 <span>Schedule Service</span>
                 <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
@@ -40,10 +40,10 @@ import Layout from '../layouts/Layout.astro';
               </a>
               
               <div class="flex items-center text-white/80">
-                <div class="w-px h-12 bg-white/30 mr-6 hidden sm:block"></div>
+                <div class="w-px h-12 bg-white/30 mr-6 hidden sm:block divider-mobile-hide"></div>
                               <div>
-                <p class="text-xs uppercase tracking-wide text-white/60 mb-1">Tampa Bay Direct</p>
-                <p class="text-xl font-bold">(727) 265-1952</p>
+                <p class="text-xs uppercase tracking-wide text-white/60 mb-1 text-mobile-sm">Tampa Bay Direct</p>
+                <p class="text-xl font-bold text-mobile-lg">(727) 265-1952</p>
               </div>
               </div>
             </div>
@@ -60,25 +60,25 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/hero-image.jpeg" 
               alt="Professional cleanout team loading boxes into truck" 
-              class="w-full h-full object-contain"
+              class="w-full h-full object-contain image-mobile-fix"
             />
             
             <!-- Professional Service Indicators -->
-            <div class="absolute top-8 right-8 z-20">
+            <div class="absolute top-8 right-8 z-20 overlay-mobile">
               <div class="bg-black/80 backdrop-blur-sm rounded-2xl p-6 text-white">
                 <div class="flex items-center space-x-4">
                   <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
                     <span class="text-black font-black text-sm">24H</span>
                   </div>
                   <div>
-                    <p class="text-xs uppercase tracking-wide text-white/80">Response Time</p>
-                    <p class="font-bold">Same Day Service</p>
+                    <p class="text-xs uppercase tracking-wide text-white/80 text-mobile-sm">Response Time</p>
+                    <p class="font-bold text-mobile-base">Same Day Service</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div class="absolute bottom-8 right-8 z-20">
+            <div class="absolute bottom-8 right-8 z-20 overlay-mobile">
               <div class="bg-black/80 backdrop-blur-sm rounded-2xl p-6 text-white">
                 <div class="flex items-center space-x-4">
                   <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center">
@@ -87,8 +87,8 @@ import Layout from '../layouts/Layout.astro';
                     </svg>
                   </div>
                   <div>
-                    <p class="text-xs uppercase tracking-wide text-white/80">Completion Rate</p>
-                    <p class="font-bold">100% Success</p>
+                    <p class="text-xs uppercase tracking-wide text-white/80 text-mobile-sm">Completion Rate</p>
+                    <p class="font-bold text-mobile-base">100% Success</p>
                   </div>
                 </div>
               </div>
@@ -107,27 +107,27 @@ import Layout from '../layouts/Layout.astro';
 
 
   <!-- Ultra Premium Why Choose Us Section -->
-  <section class="py-32 bg-gradient-to-br from-slate-50 to-white relative">
+  <section class="py-32 bg-gradient-to-br from-slate-50 to-white relative section-mobile-padding">
     <div class="max-w-6xl mx-auto px-8">
-      <div class="text-center mb-20">
-        <span class="inline-block px-6 py-3 bg-black text-white font-bold text-xs uppercase tracking-[0.2em] rounded-full mb-8">
+      <div class="text-center mb-20 space-mobile-lg">
+        <span class="inline-block px-6 py-3 bg-black text-white font-bold text-xs uppercase tracking-[0.2em] rounded-full mb-8 space-mobile-md">
           Why Choose Us
         </span>
-        <h2 class="font-playfair text-6xl md:text-7xl font-black text-black mb-8 leading-tight">
+        <h2 class="font-playfair text-6xl md:text-7xl font-black text-black mb-8 leading-tight section-title-mobile">
           Ultra Premium
           <span class="block text-slate-400">Standards</span>
         </h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mx-auto mb-12"></div>
+        <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mx-auto mb-12 space-mobile-lg"></div>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 card-spacing-mobile">
         <!-- Same Day -->
         <div class="text-center group">
-          <div class="w-32 h-32 bg-gradient-to-br from-black to-slate-800 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl">
+          <div class="w-32 h-32 bg-gradient-to-br from-black to-slate-800 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl circle-mobile">
             <span class="text-4xl font-black text-white">24H</span>
           </div>
-          <h3 class="text-2xl font-bold text-black mb-4">Same Day Service</h3>
-          <p class="text-slate-600 text-lg leading-relaxed">
+          <h3 class="text-2xl font-bold text-black mb-4 text-mobile-lg">Same Day Service</h3>
+          <p class="text-slate-600 text-lg leading-relaxed text-mobile-base">
             House cleared within 24 hours of your call. 
             No delays. No excuses.
           </p>
@@ -135,11 +135,11 @@ import Layout from '../layouts/Layout.astro';
         
         <!-- Complete Removal -->
         <div class="text-center group">
-          <div class="w-32 h-32 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl">
+          <div class="w-32 h-32 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl circle-mobile">
             <span class="text-4xl font-black text-black">100%</span>
           </div>
-          <h3 class="text-2xl font-bold text-black mb-4">Complete Removal</h3>
-          <p class="text-slate-600 text-lg leading-relaxed">
+          <h3 class="text-2xl font-bold text-black mb-4 text-mobile-lg">Complete Removal</h3>
+          <p class="text-slate-600 text-lg leading-relaxed text-mobile-base">
             Everything gone. House empty. 
             Ready for showing immediately.
           </p>
@@ -147,11 +147,11 @@ import Layout from '../layouts/Layout.astro';
         
         <!-- Premium Clients -->
         <div class="text-center group">
-          <div class="w-32 h-32 bg-gradient-to-br from-slate-700 to-black rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl">
+          <div class="w-32 h-32 bg-gradient-to-br from-slate-700 to-black rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-105 transition-all duration-300 shadow-2xl circle-mobile">
             <span class="text-4xl font-black text-white">$5M+</span>
           </div>
-          <h3 class="text-2xl font-bold text-black mb-4">Premium Properties</h3>
-          <p class="text-slate-600 text-lg leading-relaxed">
+          <h3 class="text-2xl font-bold text-black mb-4 text-mobile-lg">Premium Properties</h3>
+          <p class="text-slate-600 text-lg leading-relaxed text-mobile-base">
             Trusted by luxury real estate professionals.
             Discretion guaranteed.
           </p>
@@ -161,29 +161,29 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Ultra Premium CTA Section -->
-  <section class="py-32 bg-gradient-to-br from-black via-slate-900 to-black text-white relative">
+  <section class="py-32 bg-gradient-to-br from-black via-slate-900 to-black text-white relative section-mobile-padding">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,215,0,0.1)_0%,transparent_70%)] opacity-50"></div>
     
     <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
-      <span class="inline-block px-6 py-3 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-xs uppercase tracking-[0.2em] rounded-full mb-8">
+      <span class="inline-block px-6 py-3 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-xs uppercase tracking-[0.2em] rounded-full mb-8 space-mobile-md">
         Ready to Sell?
       </span>
       
-      <h2 class="font-playfair text-6xl md:text-7xl font-black text-white mb-8 leading-tight">
+      <h2 class="font-playfair text-6xl md:text-7xl font-black text-white mb-8 leading-tight section-title-mobile">
         House Cleared
         <span class="block text-transparent bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text">
           Today
         </span>
       </h2>
       
-      <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mx-auto mb-12"></div>
+      <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mx-auto mb-12 space-mobile-lg"></div>
       
-      <p class="text-xl md:text-2xl text-white/80 font-light leading-relaxed mb-16">
+      <p class="text-xl md:text-2xl text-white/80 font-light leading-relaxed mb-16 text-mobile-lg space-mobile-lg">
         One call. Complete cleanout. Market ready.
       </p>
       
-      <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
-        <a href="/contact" class="group inline-flex items-center px-12 py-6 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-lg uppercase tracking-wider rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300">
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-center button-stack-mobile">
+        <a href="/contact" class="group inline-flex items-center px-12 py-6 bg-gradient-to-r from-amber-400 to-yellow-500 text-black font-bold text-lg uppercase tracking-wider rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 hero-cta-mobile">
           <span>Get Quote Now</span>
           <svg class="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
@@ -191,10 +191,10 @@ import Layout from '../layouts/Layout.astro';
         </a>
         
         <div class="flex items-center text-white/80">
-          <div class="w-px h-16 bg-white/30 mr-8"></div>
+          <div class="w-px h-16 bg-white/30 mr-8 divider-mobile-hide"></div>
           <div class="text-left">
-            <p class="text-sm uppercase tracking-wide text-white/60 mb-1">Tampa Bay Direct</p>
-            <p class="text-2xl font-bold">(727) 265-1952</p>
+            <p class="text-sm uppercase tracking-wide text-white/60 mb-1 text-mobile-sm">Tampa Bay Direct</p>
+            <p class="text-2xl font-bold text-mobile-lg">(727) 265-1952</p>
           </div>
         </div>
       </div>
